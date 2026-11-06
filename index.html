@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planificador</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="logic.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar bg-1 fg-2" id="navbar">
+        <div class="container-fluid">
+            <span class="navbar-brand mb-0 h1" id="textoNavbar"><h4>Planificador de Tareas</h4></span>
+        </div>
+    </nav>
+
+    <!-- Agregar Tarea -->
+    <div class="container">
+        <div class="row">
+            <div class="col-3 text-center" id="agregarTarea">
+                <h3> Agregar Tarea </h3>
+                <div class="nombreTarea">
+                    <p class="parrafoTarea">Tarea</p>
+                    <input type="text" id="tarea">
+                </div>
+                <div class="descripcion">
+                    <p class="parrafoTarea">Descripcion de la Tarea</p>
+                    <input type="text" id="descripcion">
+                </div>
+                <div class="prioridad">
+                    <p class="parrafoTarea">prioridad</p>
+                    <button class="prioridadBoton">Baja</button>
+                    <button class="prioridadBoton">Media</button>
+                    <button class="prioridadBoton">Alta</button>
+                </div>
+                <div class="fechaEntrega">
+                    <p class="parrafoTarea">Fecha de entrega</p>
+                    <input type="text" id="entregaFecha"></input>
+                </div>
+                <div>
+                    <button id="enviarFormulario">Enviar</button>
+                </div>
+            </div>
+            <!--Lista de Tareas-->
+            <div class="col" id="listaTareas">
+                <h3>Lista de Tareas</h3>
+                <div id="listaTarjetas">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

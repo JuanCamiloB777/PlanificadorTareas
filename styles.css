@@ -1,0 +1,29 @@
+#textoNavbar{
+    margin-left: 20px;
+}
+
+#listaTareas{
+    border: 10px solid salmon;
+}
+
+
+#agregarTarea{
+    border: 10px solid salmon;
+}
+
+#navbar{
+  max-width: 60%;
+  margin: auto;
+  border-style:outset;
+}
+
+.nombre{
+    margin: auto;
+}
+.parrafoTarea{
+    margin: 3%;
+}
+
+#enviarFormulario{
+    margin: 5%;
+}
